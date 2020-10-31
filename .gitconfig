@@ -1,0 +1,17 @@
+[user]
+	email = noahjutz@tutanota.de
+	name = Noah Jutz
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lgs = lg -4
+	s = status -s
+	ca = commit -a
+	cam = commit -a -m 
+	amend = commit --amend --no-edit
+    new = !git init && git add . && git commit -m "Initial"
+[credential]
+	helper = store
+[core]
+	editor = nvim
+[pull]
+	ff = only
